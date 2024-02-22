@@ -1,7 +1,7 @@
 const seats = document.getElementsByClassName('btn-all')
 
 sum = 0;
-
+     // Start Loop
 for(const seat of seats) {
 
    seat.addEventListener("click", function (event){
@@ -43,9 +43,3 @@ for(const seat of seats) {
 };
 
 
-// function totalAmount(ticketPrice){
-//     sum = sum + ticketPrice;
-//     totalPrice.innerText = sum;
-//     const totalPrice = totalPrice.innerText;
-//     return totalPrice;
-// }
