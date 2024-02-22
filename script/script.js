@@ -1,5 +1,6 @@
 const seats = document.getElementsByClassName('btn-all')
 
+sum = 0;
 
 for(const seat of seats) {
 
@@ -7,14 +8,8 @@ for(const seat of seats) {
 
     const seatName = event.target.innerText;
 
-    const ticketPrice = parseInt(550);
-
-    const ticketAll = document.getElementById("ticket-price");
-    
-
     seat.classList.add("bg-[#1DD100]","text-white");
-    
-    console.log(seatName)
+
 
          //Ticket quantity
 
@@ -37,12 +32,20 @@ for(const seat of seats) {
     div.appendChild(p3);
 
     ticketAll.appendChild(div);
-    ticketAll
-    console.log(div)
 
-
+    
+    
+    
+    
 
 
    });
-    
 };
+
+
+function totalAmount(ticketPrice){
+    sum = sum + ticketPrice;
+    totalPrice.innerText = sum;
+    const totalPrice = totalPrice.innerText;
+    return totalPrice;
+}
