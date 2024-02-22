@@ -8,6 +8,10 @@ for(const seat of seats) {
 
     const seatName = event.target.innerText;
 
+    const ticketPrice = parseInt(550);
+
+    const ticketAll = document.getElementById("ticket-price");
+
     seat.classList.add("bg-[#1DD100]","text-white");
 
 
@@ -34,18 +38,14 @@ for(const seat of seats) {
     ticketAll.appendChild(div);
 
     
-    
-    
-    
-
 
    });
 };
 
 
-function totalAmount(ticketPrice){
-    sum = sum + ticketPrice;
-    totalPrice.innerText = sum;
-    const totalPrice = totalPrice.innerText;
-    return totalPrice;
-}
+// function totalAmount(ticketPrice){
+//     sum = sum + ticketPrice;
+//     totalPrice.innerText = sum;
+//     const totalPrice = totalPrice.innerText;
+//     return totalPrice;
+// }
